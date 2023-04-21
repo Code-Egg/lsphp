@@ -1,0 +1,1 @@
+docker build . --tag abc/test:lsphp81 --build-arg PHP_VERSION=lsphp81
