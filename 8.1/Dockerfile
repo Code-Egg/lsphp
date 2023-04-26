@@ -20,8 +20,7 @@ RUN php --version
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
 WORKDIR /var/www/vhosts/
 
 EXPOSE 9000
-CMD ["php"]
+CMD ["/usr/local/lsws/$PHP_VERSION/bin/lsphp", "-b *:9000"]

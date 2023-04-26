@@ -1,0 +1,9 @@
+version: '3'
+services:
+  lsphp:
+    image: lsphp/lsphp81
+    logging:
+      driver: none
+    volumes:
+      - ./sock/lsphp81.sock:/tmp/lsphp81.sock
+    restart: always
