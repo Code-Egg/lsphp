@@ -17,9 +17,6 @@ RUN ln -s /usr/local/lsws/$PHP_VERSION/bin/php /usr/bin/php
 
 RUN php --version
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
 WORKDIR /var/www/vhosts/
 
 EXPOSE 9000
