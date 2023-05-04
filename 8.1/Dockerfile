@@ -20,4 +20,4 @@ RUN php --version
 WORKDIR /var/www/vhosts/
 
 EXPOSE 9000
-CMD ["/usr/local/lsws/lsphp81/bin/lsphp", "-b *:9000"]
+CMD ["/usr/local/lsws/lsphp81/bin/lsphp", "-b ", "*:9000"]
