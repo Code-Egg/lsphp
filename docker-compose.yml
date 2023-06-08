@@ -9,6 +9,8 @@ services:
     restart: always
     networks:
       - default
+    ports:
+      - 9000:9000
 
 networks:
   default:
